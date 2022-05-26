@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_nav_graph"
+    app:startDestination="@id/homeViewBindingFragment">
+
+    <fragment
+        android:id="@+id/homeViewBindingFragment"
+        android:name="com.tdoni_10119907.a10119907uts.presentation.fragment.HomeViewBindingFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/dailyActivityViewBindingFragment"
+        android:name="com.tdoni_10119907.a10119907uts.presentation.fragment.DailyActivityViewBindingFragment"
+        android:label="fragment_daily_activity"
+        tools:layout="@layout/fragment_daily_activity" />
+    <fragment
+        android:id="@+id/imageGalleryViewBindingFragment"
+        android:name="com.tdoni_10119907.a10119907uts.presentation.fragment.ImageGalleryViewBindingFragment"
+        android:label="fragment_image_gallery"
+        tools:layout="@layout/fragment_image_gallery" />
+    <fragment
+        android:id="@+id/profileViewBindingFragment"
+        android:name="com.tdoni_10119907.a10119907uts.presentation.fragment.ProfileViewBindingFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/videoGalleryViewBindingFragment"
+        android:name="com.tdoni_10119907.a10119907uts.presentation.fragment.MusicVideoGalleryViewBindingFragment"
+        android:label="fragment_video_gallery"
+        tools:layout="@layout/fragment_music_video_gallery" />
+</navigation>

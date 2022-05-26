@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.121" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_baseline_check_circle_24.xml" value="0.1005" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.162" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.162" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_baseline_pause_24.xml" value="0.121" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_bed_solid.xml" value="0.1795" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_book_solid.xml" value="0.1795" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_cat_solid.xml" value="0.1795" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_check_list_circle.xml" value="0.1005" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_film_solid.xml" value="0.1795" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_gamepad_solid.xml" value="0.1795" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_guitar_solid.xml" value="0.1795" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_heart_solid.xml" value="0.1795" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_laptop_code_solid.xml" value="0.1795" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_launcher_background.xml" value="0.121" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1795" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/ic_utensils_solid.xml" value="0.1795" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/drawable/selector_bottom_nav_menu.xml" value="0.137" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/font/f.xml" value="0.225" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/activity_main.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/dialog_about.xml" value="0.264" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/fragment_daily_activity.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/fragment_image_gallery.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/fragment_landing.xml" value="0.176" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/fragment_landing_content.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/fragment_landing_view_binding.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/fragment_main_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/fragment_maps.xml" value="0.1265625" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/fragment_music_video_gallery.xml" value="0.152" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/fragment_video_gallery.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/item_daily_activity.xml" value="0.2" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/item_friend_list.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/item_image_gallery.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/item_music_gallery.xml" value="0.264" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/item_photo_gallery.xml" value="0.1" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/item_video_gallery.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/layout_landing_content.xml" value="0.1265625" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/layout/selector_bottom_nav_menu.xml" value="0.759375" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/menu/menu_main.xml" value="0.1" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
+        <entry key="..\:/Users/Theod/AndroidStudioProjects/10119907UTS/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1795" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/application_nav_graph"
+    app:startDestination="@id/landingViewBindingFragment">
+
+    <fragment
+        android:id="@+id/landingViewBindingFragment"
+        android:name="com.tdoni_10119907.a10119907uts.presentation.fragment.LandingViewBindingFragment"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landingViewBindingFragment_to_mainMenuViewBindingFragment"
+            app:destination="@id/mainMenuViewBindingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainMenuViewBindingFragment"
+        android:name="com.tdoni_10119907.a10119907uts.presentation.fragment.MainMenuViewBindingFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" />
+</navigation>

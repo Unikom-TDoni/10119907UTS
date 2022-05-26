@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_zodiac"
+    tools:context=".presentation.fragment.DailyActivityViewBindingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/space_large_200">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@fraction/normal_guideline_start_point" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@fraction/normal_guideline_end_point" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_view_header_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_normal_125"
+            android:text="@string/friends"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_normal_150"
+            android:textStyle="bold"
+            app:fontFamily="@font/chakra_petch_regular"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_friend_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_mini_100"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/txt_view_header_friend" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_view_header_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_normal_100"
+            android:text="@string/daily_activity"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_normal_150"
+            android:textStyle="bold"
+            app:fontFamily="@font/chakra_petch_regular"
+            app:layout_constraintBottom_toTopOf="@id/recycler_view_daily_activity"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view_friend_list" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_daily_activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_mini_100"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/txt_view_header_daily" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

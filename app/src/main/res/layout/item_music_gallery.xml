@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_mini_100">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_view_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_mini_120"
+        android:layout_marginEnd="@dimen/space_mini_120"
+        android:textColor="@android:color/white"
+        app:fontFamily="@font/chakra_petch_regular"
+        app:layout_constraintBottom_toBottomOf="@id/img_view_thumbnail"
+        app:layout_constraintEnd_toStartOf="@id/img_view_thumbnail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_view_thumbnail" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_view_thumbnail"
+        android:layout_width="@dimen/space_large_150"
+        android:layout_height="@dimen/space_large_150"
+        android:layout_marginEnd="@dimen/space_mini_120"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txt_view_song_name"
+        app:layout_constraintStart_toEndOf="@id/txt_view_number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/cut_square"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_view_song_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:fontFamily="@font/chakra_petch_regular"
+        app:layout_constraintBottom_toTopOf="@id/txt_view_artist_name"
+        app:layout_constraintEnd_toStartOf="@id/img_view_media_control"
+        app:layout_constraintStart_toEndOf="@id/img_view_thumbnail"
+        app:layout_constraintTop_toTopOf="@id/img_view_thumbnail" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_view_artist_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        app:fontFamily="@font/chakra_petch_regular"
+        app:layout_constraintBottom_toBottomOf="@id/img_view_thumbnail"
+        app:layout_constraintEnd_toStartOf="@id/img_view_media_control"
+        app:layout_constraintStart_toStartOf="@id/txt_view_song_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_view_song_name" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_view_media_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_mini_120"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/img_view_thumbnail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_view_thumbnail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

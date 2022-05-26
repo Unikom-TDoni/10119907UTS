@@ -1,0 +1,103 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.10119907UTS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_zodiac</item>
+        <item name="colorPrimaryVariant">@color/blue_zodiac</item>
+        <item name="colorOnPrimary">@color/blue_zodiac</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/crystal_blue</item>
+        <item name="colorSecondaryVariant">@color/crystal_blue</item>
+        <item name="colorOnSecondary">@color/crystal_blue</item>
+    </style>
+
+    <style name="picture_image">
+        <item name="cornerSize">30%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="cut_square">
+        <item name="cornerSize">10%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="profile_background">
+        <item name="cornerSizeBottomLeft">30%</item>
+        <item name="cornerSizeBottomRight">30%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="btn_regular">
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeTopRight">15%</item>
+        <item name="cornerSizeBottomLeft">35%</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerFamilyBottomLeft">cut</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+    </style>
+
+    <style name="Theme.10119907UTS.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/navy</item>
+        <item name="postSplashScreenTheme">@style/Theme.10119907UTS.NoActionBar</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+    </style>
+
+    <style name="icon_center">
+        <item name="cornerSize">20%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="icon_top">
+        <item name="cornerSizeBottomRight">20%</item>
+        <item name="cornerSizeBottomLeft">20%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="icon_left">
+        <item name="cornerSizeTopRight">20%</item>
+        <item name="cornerSizeBottomRight">20%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="icon_right">
+        <item name="cornerSizeTopLeft">20%</item>
+        <item name="cornerSizeBottomLeft">20%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="icon_bottom">
+        <item name="cornerSizeTopRight">20%</item>
+        <item name="cornerSizeTopLeft">20%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="icon_top_left">
+        <item name="cornerSizeBottomRight">20%</item>
+        <item name="cornerSizeTopLeft">15%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="icon_top_right">
+        <item name="cornerSizeBottomLeft">20%</item>
+        <item name="cornerSizeTopRight">15%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="icon_bottom_right">
+        <item name="cornerSizeBottomRight">15%</item>
+        <item name="cornerSizeTopLeft">20%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="icon_bottom_left">
+        <item name="cornerSizeTopRight">20%</item>
+        <item name="cornerSizeBottomLeft">15%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="Theme.10119907UTS.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

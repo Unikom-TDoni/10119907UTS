@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeViewBindingFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/dailyActivityViewBindingFragment"
+        android:icon="@drawable/ic_baseline_timelapse_24"
+        android:title="Daily Activity" />
+
+    <item
+        android:id="@+id/imageGalleryViewBindingFragment"
+        android:icon="@drawable/ic_baseline_photo_library_24"
+        android:title="Image Gallery" />
+
+    <item
+        android:id="@+id/videoGalleryViewBindingFragment"
+        android:icon="@drawable/ic_baseline_video_library_24"
+        android:title="Video Gallery" />
+
+    <item
+        android:id="@+id/profileViewBindingFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile" />
+</menu>

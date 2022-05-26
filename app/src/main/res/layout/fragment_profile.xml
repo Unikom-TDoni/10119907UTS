@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_zodiac"
+    tools:context=".presentation.fragment.ProfileViewBindingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/space_large_200">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@fraction/normal_guideline_start_point" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@fraction/normal_guideline_end_point" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_view_header_background"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/profile_background_container"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_profile_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/profile_background" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_view_profile_photo"
+            android:layout_width="@dimen/profile_container"
+            android:layout_height="@dimen/profile_container"
+            android:padding="@dimen/space_mini_40"
+            android:src="@drawable/img_profile"
+            app:layout_constraintBottom_toBottomOf="@id/img_view_header_background"
+            app:layout_constraintEnd_toEndOf="@id/img_view_header_background"
+            app:layout_constraintStart_toStartOf="@id/img_view_header_background"
+            app:layout_constraintTop_toBottomOf="@id/img_view_header_background"
+            app:shapeAppearanceOverlay="@style/picture_image"
+            app:strokeColor="@color/blue_eyes"
+            app:strokeWidth="@dimen/space_mini_40" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_view_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_mini_40"
+            android:includeFontPadding="false"
+            android:text="@string/theodorus_doni"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_normal_150"
+            android:textStyle="bold"
+            app:fontFamily="@font/chakra_petch_regular"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/img_view_profile_photo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_phone"
+            android:layout_width="@dimen/space_large_150"
+            android:layout_height="@dimen/space_large_150"
+            android:layout_marginTop="@dimen/space_mini_40"
+            android:layout_marginEnd="@dimen/space_mini_100"
+            app:backgroundTint="@color/crystal_blue"
+            app:icon="@drawable/ic_baseline_whatsapp_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconTint="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@id/btn_mail"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_view_name"
+            app:shapeAppearanceOverlay="@style/cut_square" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_mail"
+            android:layout_width="@dimen/space_large_150"
+            android:layout_height="@dimen/space_large_150"
+            android:layout_marginEnd="@dimen/space_mini_100"
+            app:backgroundTint="@color/crystal_blue"
+            app:icon="@drawable/ic_baseline_email_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconTint="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@id/btn_instagram"
+            app:layout_constraintStart_toEndOf="@id/btn_phone"
+            app:layout_constraintTop_toTopOf="@id/btn_phone"
+            app:shapeAppearanceOverlay="@style/cut_square" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_instagram"
+            android:layout_width="@dimen/space_large_150"
+            android:layout_height="@dimen/space_large_150"
+            app:backgroundTint="@color/crystal_blue"
+            app:icon="@drawable/ic_instagram"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="@dimen/space_normal_150"
+            app:iconTint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_mail"
+            app:layout_constraintTop_toTopOf="@id/btn_phone"
+            app:shapeAppearanceOverlay="@style/cut_square" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_view_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_mini_80"
+            android:text="@string/profile_bio"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            app:fontFamily="@font/rajdhani_bold"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/btn_phone" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container_view_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/maps_container"
+            android:layout_marginTop="@dimen/space_normal_100"
+            app:layout_constraintBottom_toTopOf="@id/btn_about"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/txt_view_desc" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_about"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_mini_100"
+            android:fontFamily="@font/chakra_petch_regular"
+            android:text="@string/about"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/crystal_blue"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/fragment_container_view_map"
+            app:shapeAppearanceOverlay="@style/btn_regular" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

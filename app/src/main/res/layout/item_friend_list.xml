@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/space_mini_80"
+    android:layout_marginStart="@dimen/space_mini_80">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_view_profile_photo"
+        android:layout_width="@dimen/space_large_187.5"
+        android:padding="@dimen/space_mini_40"
+        app:strokeWidth="@dimen/space_mini_20"
+        app:strokeColor="@color/blue_eyes"
+        android:layout_height="@dimen/space_large_187.5"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/txt_view_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/cut_square" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_view_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_mini_80"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        app:fontFamily="@font/rajdhani_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/img_view_profile_photo"
+        app:layout_constraintStart_toStartOf="@id/img_view_profile_photo"
+        app:layout_constraintTop_toBottomOf="@id/img_view_profile_photo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

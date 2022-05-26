@@ -1,0 +1,29 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.10119907UTS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_zodiac</item>
+        <item name="colorPrimaryVariant">@color/blue_zodiac</item>
+        <item name="colorOnPrimary">@color/blue_zodiac</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/crystal_blue</item>
+        <item name="colorSecondaryVariant">@color/crystal_blue</item>
+        <item name="colorOnSecondary">@color/crystal_blue</item>
+    </style>
+
+    <style name="picture_image">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Theme.10119907UTS.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/blue_zodiac</item>
+        <item name="postSplashScreenTheme">@style/Theme.10119907UTS.NoActionBar</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+    </style>
+
+    <style name="Theme.10119907UTS.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

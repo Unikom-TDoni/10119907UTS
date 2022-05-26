@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_zodiac"
+    tools:context=".presentation.fragment.HomeViewBindingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_large_218">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@fraction/normal_guideline_start_point" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@fraction/normal_guideline_end_point" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_view_header_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_background_container"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_profile_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/profile_background" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_view_profile_photo"
+            android:layout_width="@dimen/profile_container"
+            android:layout_height="@dimen/profile_container"
+            android:padding="@dimen/space_mini_40"
+            android:src="@drawable/img_profile"
+            app:layout_constraintBottom_toBottomOf="@id/img_view_header_background"
+            app:layout_constraintEnd_toEndOf="@id/img_view_header_background"
+            app:layout_constraintStart_toStartOf="@id/img_view_header_background"
+            app:layout_constraintTop_toBottomOf="@id/img_view_header_background"
+            app:shapeAppearanceOverlay="@style/picture_image"
+            app:strokeColor="@color/blue_eyes"
+            app:strokeWidth="@dimen/space_mini_40" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_view_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_mini_40"
+            android:includeFontPadding="false"
+            android:text="@string/theodorus_doni"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_normal_150"
+            android:textStyle="bold"
+            app:fontFamily="@font/chakra_petch_regular"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/img_view_profile_photo" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_view_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_mini_40"
+            android:text="@string/profile_bio"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            app:fontFamily="@font/rajdhani_bold"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/txt_view_name" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_guitar_icon"
+            android:layout_width="@dimen/space_extra_large_100"
+            android:layout_height="@dimen/space_extra_large_100"
+            android:layout_marginTop="@dimen/space_normal_150"
+            android:layout_marginEnd="@dimen/space_mini_100"
+            android:background="@color/navy"
+            android:src="@drawable/ic_guitar_solid"
+            app:contentPadding="@dimen/space_normal_100"
+            app:layout_constraintBottom_toTopOf="@id/img_hearth_icon"
+            app:layout_constraintStart_toStartOf="@id/img_hearth_icon"
+            app:layout_constraintTop_toBottomOf="@id/txt_view_desc"
+            app:shapeAppearanceOverlay="@style/icon_top" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_movie_icon"
+            android:layout_width="@dimen/space_extra_large_100"
+            android:layout_height="@dimen/space_extra_large_100"
+            android:layout_marginStart="@dimen/space_mini_100"
+            android:background="@color/navy"
+            android:src="@drawable/ic_film_solid"
+            app:contentPadding="@dimen/space_normal_100"
+            app:layout_constraintStart_toEndOf="@id/img_hearth_icon"
+            app:layout_constraintTop_toTopOf="@id/img_hearth_icon"
+            app:shapeAppearanceOverlay="@style/icon_right" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_hearth_icon"
+            android:layout_width="@dimen/space_extra_large_100"
+            android:layout_height="@dimen/space_extra_large_100"
+            android:layout_marginTop="@dimen/space_mini_100"
+            android:background="@color/navy"
+            android:src="@drawable/ic_heart_solid"
+            app:contentPadding="@dimen/space_normal_100"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/img_guitar_icon"
+            app:shapeAppearanceOverlay="@style/icon_center" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_sleep_icon"
+            android:layout_width="@dimen/space_extra_large_100"
+            android:layout_height="@dimen/space_extra_large_100"
+            android:layout_marginEnd="@dimen/space_mini_100"
+            android:background="@color/navy"
+            android:src="@drawable/ic_bed_solid"
+            app:contentPadding="@dimen/space_normal_100"
+            app:layout_constraintEnd_toStartOf="@id/img_hearth_icon"
+            app:layout_constraintTop_toTopOf="@id/img_hearth_icon"
+            app:shapeAppearanceOverlay="@style/icon_left" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_sleep_book"
+            android:layout_width="@dimen/space_extra_large_100"
+            android:layout_height="@dimen/space_extra_large_100"
+            android:layout_marginTop="@dimen/space_mini_100"
+            android:background="@color/navy"
+            android:src="@drawable/ic_book_solid"
+            app:contentPadding="@dimen/space_normal_100"
+            app:layout_constraintStart_toStartOf="@id/img_hearth_icon"
+            app:layout_constraintTop_toBottomOf="@id/img_hearth_icon"
+            app:shapeAppearanceOverlay="@style/icon_bottom" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_gamepad"
+            android:layout_width="@dimen/space_extra_large_100"
+            android:layout_height="@dimen/space_extra_large_100"
+            android:layout_marginTop="@dimen/space_mini_100"
+            android:background="@color/navy"
+            android:src="@drawable/ic_gamepad_solid"
+            app:contentPadding="@dimen/space_normal_100"
+            app:layout_constraintStart_toStartOf="@id/img_sleep_icon"
+            app:layout_constraintTop_toBottomOf="@id/img_sleep_icon"
+            app:shapeAppearanceOverlay="@style/icon_bottom_left" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_cat"
+            android:layout_width="@dimen/space_extra_large_100"
+            android:layout_height="@dimen/space_extra_large_100"
+            android:layout_marginTop="@dimen/space_mini_100"
+            android:background="@color/navy"
+            android:src="@drawable/ic_cat_solid"
+            app:contentPadding="@dimen/space_normal_100"
+            app:layout_constraintStart_toStartOf="@id/img_movie_icon"
+            app:layout_constraintTop_toBottomOf="@id/img_movie_icon"
+            app:shapeAppearanceOverlay="@style/icon_bottom_right" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_laptop_icon"
+            android:layout_width="@dimen/space_extra_large_100"
+            android:layout_height="@dimen/space_extra_large_100"
+            android:layout_marginStart="@dimen/space_mini_100"
+            android:background="@color/navy"
+            android:src="@drawable/ic_laptop_code_solid"
+            app:contentPadding="@dimen/space_normal_100"
+            app:layout_constraintStart_toEndOf="@id/img_guitar_icon"
+            app:layout_constraintTop_toTopOf="@id/img_guitar_icon"
+            app:shapeAppearanceOverlay="@style/icon_top_right" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_eat_icon"
+            android:layout_width="@dimen/space_extra_large_100"
+            android:layout_height="@dimen/space_extra_large_100"
+            android:layout_marginEnd="@dimen/space_mini_100"
+            android:background="@color/navy"
+            android:src="@drawable/ic_utensils_solid"
+            app:contentPadding="@dimen/space_normal_100"
+            app:layout_constraintEnd_toStartOf="@id/img_guitar_icon"
+            app:layout_constraintTop_toTopOf="@id/img_guitar_icon"
+            app:shapeAppearanceOverlay="@style/icon_top_left" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
